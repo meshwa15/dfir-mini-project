@@ -1,0 +1,36 @@
+# Python Virtual Environments
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Forensic Evidence & Dumps (Strict Rule: NEVER commit evidence)
+evidence/originals/
+*.raw
+*.vmem
+*.dmp
+*.dd
+*.img
+*.E01
+*.bin
+*.pcap
+*.pcapng
+*.zip
+*.7z
+*.tar.gz
+*.iso
+
+# Sensitive or Large Extracted Artifacts
+results/memory/*.dmp
+results/memory/*.raw
+results/endpoint/extracted/
+logs/*.tmp
+
+# IDE & OS Artifacts
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini

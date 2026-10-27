@@ -1,0 +1,4 @@
+DFIR Mini-Project Validation Summary
+Checks Passed: 24/24
+
+All checks successfully passed.

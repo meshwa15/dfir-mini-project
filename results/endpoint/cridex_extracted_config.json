@@ -1,0 +1,47 @@
+{
+  "case_name": "Volatility Foundation Cridex Malware Memory Analysis",
+  "malware_family": "Cridex / Feodo / Bugat Banking Trojan",
+  "c2_telemetry_streams": [
+    {
+      "memory_offset_hex": "0x1ffe836",
+      "request_line": "POST /zb/v_01_a/in/ HTTP/1.1",
+      "c2_host": "41.168.5.140:8080",
+      "user_agent": "Mozilla/5.0 (Windows; U; MSIE 7.0; Windows NT 6.0; en-US)",
+      "content_length": 229,
+      "payload_preview_hex": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "webinject_targets_count": 30,
+  "targeted_banking_urls": [
+    "*.-.......*",
+    "*.......*",
+    "*.........*",
+    "*.0.......*",
+    "*.J.......*",
+    "*.com/K1/*",
+    "*ablv.com*",
+    "*blilk.com*",
+    "*bscincky.com*",
+    "*bxs.com*",
+    "*cu.com*",
+    "*cu.org*",
+    "*ecash.*",
+    "*etrade.com*",
+    "*ibanka.seb.lv*",
+    "*ntrs.com*",
+    "*online.lkb.lv*",
+    "*pnc.com*",
+    "*rbsm.com*",
+    "*rbworld.lv*",
+    "*seb.lt*",
+    "*seb.lv*",
+    "*snoras.com*",
+    "*sso.uboc*",
+    "*sso.uboc.com*",
+    "*tbb.ee*",
+    "*valartis.li*",
+    "*vpn1.*",
+    "*wellsfargo.com*",
+    "*wtdirect.com*"
+  ]
+}

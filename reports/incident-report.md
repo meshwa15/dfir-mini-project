@@ -158,7 +158,29 @@ Cache-Control: no-cache
 
 ## 7. Endpoint Artifact Analysis Scope
 
-Because the provided evidence consists solely of a physical RAM dump (`cridex.vmem`), file-system level endpoint artifacts requiring raw disk images (such as `$MFT`, Volume Shadow Copies, and full NTFS journal transaction records) were **out of scope**. However, endpoint registry hives (`NTUSER.DAT`, `SYSTEM`, `SOFTWARE`) and user interaction history (`UserAssist`) were extracted directly from volatile memory structures.
+### 7.1 Scope Boundaries & Available Artifacts
+Because the provided evidence consists of a physical RAM dump (`cridex.vmem`), non-volatile disk-level artifacts requiring raw disk images (such as physical `$MFT` clusters, Volume Shadow Copies, and full NTFS journal transaction records) were **out of scope**. 
+
+However, essential endpoint execution artifacts and registry hives were recovered directly from volatile memory structures:
+1. **In-Memory Shimcache (`ahcache.sys` AVL Tree)**: Extracted via `windows.shimcachemem`.
+2. **User Activity History (`UserAssist`)**: Extracted from the memory-resident `NTUSER.DAT` hive.
+3. **Autostart Run Keys & WebInject Configuration**: Extracted from `NTUSER.DAT` and `software` hives.
+
+### 7.2 In-Memory Shimcache Analysis (`windows.shimcachemem`)
+The Application Compatibility Cache (`Shimcache`) is maintained by the kernel driver `ahcache.sys` to track binary compatibility metadata across system executions. Volatility 3's `windows.shimcachemem` successfully parsed the active AVL tree from kernel memory:
+- **`\??\C:\WINDOWS\cridex1.exe`**:
+  - File Size: `0x1b5e0` (112,096 bytes)
+  - Filesystem Modified Time: `2012-07-22 02:28:28 UTC`
+  - Shimcache Last Update: `2012-07-22 02:31:51 UTC` (matches UserAssist execution time)
+- **`\??\C:\Documents and Settings\Robert\Application Data\KB00207877.exe`**:
+  - File Size: `0x1b5e0` (112,096 bytes)
+  - Filesystem Modified Time: `2012-07-22 02:28:28 UTC`
+  - Shimcache Last Update: `2012-07-22 02:43:39 UTC` (post-reboot execution timestamp)
+
+#### Investigative Significance:
+1. **Identical File Size & Compile Time**: Both `cridex1.exe` and `KB00207877.exe` share the exact file size of 112,096 bytes and identical modification timestamp (`02:28:28 UTC`). This conclusively proves that `KB00207877.exe` is a direct filesystem replica of `cridex1.exe` dropped by the malware loader into `%APPDATA%`.
+2. **Post-Reboot Execution Confirmation**: The Shimcache update at `02:43:39 UTC` provides independent forensic proof that the autostart persistence entry executed following system reboot (`smss.exe` at `02:42:31 UTC`).
+- *Artifact Reference*: `results/memory/windows_shimcachemem.txt`
 
 ---
 
@@ -169,19 +191,22 @@ Because the provided evidence consists solely of a physical RAM dump (`cridex.vm
 | **EVT-006** | 2012-07-22 02:25:41 | UserAssist | `inetcpl.cpl` | Internet Options opened by user or script |
 | **EVT-008** | 2012-07-22 02:26:19 | UserAssist | `firewall.cpl` | Windows Firewall control panel accessed |
 | **EVT-009** | 2012-07-22 02:26:27 | UserAssist | `cmd.exe` | Interactive command prompt executed under Robert profile |
-| **EVT-011** | 2012-07-22 02:31:28 | UserAssist | `iexplore.exe` | Internet Explorer executed, browsing preceding initial delivery |
-| **EVT-012** | 2012-07-22 02:31:51 | UserAssist | `cridex1.exe` | **Initial compromise execution of Cridex dropper `C:\WINDOWS\cridex1.exe`** |
-| **EVT-013** | 2012-07-22 02:31:51 | HKCU Run Key | `KB00207877.exe` | **Persistence installed pointing to `Application Data\KB00207877.exe`** |
-| **EVT-014** | 2012-07-22 02:31:51 | HKCU Registry | `WSH\9DBBCFAD` | Cridex configuration key created in registry |
-| **EVT-015** | 2012-07-22 02:33:06 | HKCU Registry | `WSH\8149A9A8` | WebInject URL matching targets written for >20 banking sites |
-| **EVT-016** | 2012-07-22 02:42:31 | EPROCESS | `smss.exe` (PID 368) | Host system reboot / startup initiated |
-| **EVT-017** | 2012-07-22 02:42:36 | EPROCESS | `explorer.exe` (PID 1484) | Interactive user shell starts under Robert profile |
-| **EVT-018** | 2012-07-22 02:42:36 | EPROCESS | `reader_sl.exe` (PID 1640) | Adobe Reader Speed Launcher spawned from HKLM Run key |
-| **EVT-019** | 2012-07-22 02:42:36 | Process VAD | `explorer.exe` (PID 1484) | **Process hollowing / injection of unbacked PE into `explorer.exe`** |
-| **EVT-020** | 2012-07-22 02:42:36 | Process VAD | `reader_sl.exe` (PID 1640) | **Process hollowing / injection of unbacked PE into `reader_sl.exe`** |
-| **EVT-021** | 2012-07-22 02:42:36 | Kernel Handles | `reader_sl.exe` / `explorer.exe` | Mutexes `XMR8149A9A8`, `XMQ8149A9A8` created; registry handles opened |
-| **EVT-023** | 2012-07-22 02:43:00 | Network Buffer | `explorer.exe` / `reader_sl.exe` | **HTTP POST C2 check-in transmitted to `41.168.5.140:8080`** |
-| **EVT-024** | 2012-07-22 02:45:08 | Kernel Time | Memory Snapshot | Physical memory dump acquired |
+| **EVT-010** | 2012-07-22 02:28:28 | Shimcache | `cridex1.exe` / `KB00207877.exe` | Filesystem modified timestamp for both cridex1.exe and dropped clone KB00207877.exe (112,096 bytes) |
+| **EVT-011** | 2012-07-22 02:30:20 | UserAssist | `explorer.exe` | Windows Explorer refreshed / desktop interaction |
+| **EVT-012** | 2012-07-22 02:31:28 | UserAssist | `iexplore.exe` | Internet Explorer executed, browsing preceding initial delivery |
+| **EVT-013** | 2012-07-22 02:31:51 | UserAssist / Shimcache | `cridex1.exe` | **Initial compromise execution of Cridex dropper `C:\WINDOWS\cridex1.exe`** |
+| **EVT-014** | 2012-07-22 02:31:51 | HKCU Run Key | `KB00207877.exe` | **Persistence installed pointing to `Application Data\KB00207877.exe`** |
+| **EVT-015** | 2012-07-22 02:31:51 | HKCU Registry | `WSH\9DBBCFAD` | Cridex configuration key created in registry |
+| **EVT-016** | 2012-07-22 02:33:06 | HKCU Registry | `WSH\8149A9A8` | WebInject URL matching targets written for >20 banking sites |
+| **EVT-017** | 2012-07-22 02:42:31 | EPROCESS | `smss.exe` (PID 368) | Host system reboot / startup initiated |
+| **EVT-018** | 2012-07-22 02:42:36 | EPROCESS | `explorer.exe` (PID 1484) | Interactive user shell starts under Robert profile |
+| **EVT-019** | 2012-07-22 02:42:36 | EPROCESS | `reader_sl.exe` (PID 1640) | Adobe Reader Speed Launcher spawned from HKLM Run key |
+| **EVT-020** | 2012-07-22 02:42:36 | Process VAD | `explorer.exe` (PID 1484) | **Process hollowing / injection of unbacked PE into `explorer.exe`** |
+| **EVT-021** | 2012-07-22 02:42:36 | Process VAD | `reader_sl.exe` (PID 1640) | **Process hollowing / injection of unbacked PE into `reader_sl.exe`** |
+| **EVT-022** | 2012-07-22 02:42:36 | Kernel Handles | `reader_sl.exe` / `explorer.exe` | Mutexes `XMR8149A9A8`, `XMQ8149A9A8` created; registry handles opened |
+| **EVT-024** | 2012-07-22 02:43:00 | Network Buffer | `explorer.exe` / `reader_sl.exe` | **HTTP POST C2 check-in transmitted to `41.168.5.140:8080`** |
+| **EVT-025** | 2012-07-22 02:43:39 | Shimcache | `KB00207877.exe` | Shimcache entry updated confirming post-boot execution of persistent payload |
+| **EVT-026** | 2012-07-22 02:45:08 | Kernel Time | Memory Snapshot | Physical memory dump acquired |
 
 Full details are cataloged in `timeline/incident-timeline.csv`.
 

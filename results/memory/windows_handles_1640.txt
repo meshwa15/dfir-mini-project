@@ -1,0 +1,43 @@
+Volatility 3 Framework 2.28.2
+
+PID	Process	Offset	HandleValue	Type	GrantedAccess	Name
+
+1640	reader_sl.exe	0xe10096e0	0x4	KeyedEvent	0xf0003	CritSecOutOfMemoryEvent
+1640	reader_sl.exe	0xe159c978	0x8	Directory	0x3	KnownDlls
+1640	reader_sl.exe	0x82211678	0xc	File	0x100020	\Device\HarddiskVolume1\Documents and Settings\Robert
+1640	reader_sl.exe	0x82210208	0x10	File	0x100020	\Device\HarddiskVolume1\WINDOWS\WinSxS\x86_Microsoft.VC80.CRT_1fc8b3b9a1e18e3b_8.0.50727.762_x-ww_6b128700
+1640	reader_sl.exe	0xe14916d0	0x14	Directory	0xf000f	Windows
+1640	reader_sl.exe	0xe1c6a588	0x18	Port	0x21f0001	-
+1640	reader_sl.exe	0x82319610	0x1c	Event	0x21f0003	-
+1640	reader_sl.exe	0x8205a2a0	0x20	WindowStation	0xf037f	WinSta0
+1640	reader_sl.exe	0x822f8168	0x24	Desktop	0xf01ff	Default
+1640	reader_sl.exe	0x8205a2a0	0x28	WindowStation	0xf037f	WinSta0
+1640	reader_sl.exe	0x82311280	0x2c	Semaphore	0x100003	-
+1640	reader_sl.exe	0x82234dd0	0x30	Semaphore	0x100003	-
+1640	reader_sl.exe	0xe1c042d0	0x34	Key	0x20f003f	MACHINE
+1640	reader_sl.exe	0xe16ce308	0x38	Directory	0x2000f	BaseNamedObjects
+1640	reader_sl.exe	0x8213d0e0	0x3c	Semaphore	0x1f0003	shell.{A48F1A32-A340-11D1-BC6B-00A0C90312E1}
+1640	reader_sl.exe	0xe1835648	0x40	Key	0x20f003f	USER\S-1-5-21-789336058-261478967-1417001333-1003
+1640	reader_sl.exe	0x820d2f28	0x44	File	0x100020	\Device\HarddiskVolume1\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.5512_x-ww_35d4ce83
+1640	reader_sl.exe	0xe1c72300	0x48	Port	0x1f0001	-
+1640	reader_sl.exe	0xe17d3938	0x4c	Section	0x4	-
+1640	reader_sl.exe	0x81de10c8	0x50	Event	0x1f0003	-
+1640	reader_sl.exe	0x822924c8	0x54	Thread	0x1f03ff	Tid 1648 Pid 1640
+1640	reader_sl.exe	0x821dd728	0x58	Event	0x1f0003	-
+1640	reader_sl.exe	0x82196418	0x5c	Event	0x1f0003	-
+1640	reader_sl.exe	0x820022e0	0x60	Event	0x1f0003	-
+1640	reader_sl.exe	0x82002a18	0x64	Event	0x1f0003	-
+1640	reader_sl.exe	0x822924c8	0x68	Thread	0x1f03ff	Tid 1648 Pid 1640
+1640	reader_sl.exe	0x821dc270	0x6c	File	0x100001	\Device\KsecDD
+1640	reader_sl.exe	0xe1c5cfb8	0x70	Key	0x10	USER\S-1-5-21-789336058-261478967-1417001333-1003\SOFTWARE\MICROSOFT\WSH\8149A9A8
+1640	reader_sl.exe	0xe1c6c030	0x74	Token	0x18	-
+1640	reader_sl.exe	0x81de1e68	0x78	Event	0x1f0003	-
+1640	reader_sl.exe	0x81dd2e08	0x7c	IoCompletion	0x1f0003	-
+1640	reader_sl.exe	0x81de3c70	0x80	IoCompletion	0x1f0003	-
+1640	reader_sl.exe	0x81dd2e08	0x84	IoCompletion	0x1f0003	-
+1640	reader_sl.exe	0x822fdb00	0x88	Mutant	0x1f0001	XMM00000668
+1640	reader_sl.exe	0x822d0d98	0x8c	Event	0x1f0003	XME00000668
+1640	reader_sl.exe	0xe154db20	0x90	Key	0x10	USER\S-1-5-21-789336058-261478967-1417001333-1003\SOFTWARE\MICROSOFT\WSH\9DBBCFAD
+1640	reader_sl.exe	0x820fd260	0x94	Semaphore	0x1f0003	shell.{210A4BA0-3AEA-1069-A2D9-08002B30309D}
+1640	reader_sl.exe	0x81e9d708	0x98	Mutant	0x1f0001	XMR8149A9A8
+1640	reader_sl.exe	0x81e1d3c0	0x9c	Event	0x1f0003	-

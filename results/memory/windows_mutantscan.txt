@@ -1,0 +1,151 @@
+Volatility 3 Framework 2.28.2
+
+Offset	Name
+
+0x1fd5680	N/A
+0x1fd6030	746bbf3569adEncrypt
+0x1fd7558	N/A
+0x1fd8f98	N/A
+0x1fe1088	_SHuassist.mtx
+0x1fe45c0	WininetProxyRegistryMutex
+0x201e748	userenv: User Registry policy mutex
+0x2020550	WininetConnectionMutex
+0x2022180	N/A
+0x2022f38	c:!documents and settings!robert!local settings!temporary internet files!content.ie5!
+0x20233e8	N/A
+0x2023810	N/A
+0x2023ca8	WininetStartupMutex
+0x2026a78	N/A
+0x2026ae8	N/A
+0x2026b58	N/A
+0x2046820	N/A
+0x204ae00	N/A
+0x206ed30	N/A
+0x206f810	N/A
+0x2070ec8	N/A
+0x20716d8	N/A
+0x2072128	N/A
+0x2072d30	N/A
+0x2073810	N/A
+0x2075180	c:!documents and settings!localservice!local settings!history!history.ie5!
+0x2075ec8	N/A
+0x2077150	SHIMLIB_LOG_MUTEX
+0x207a1d8	SingleSesMutex
+0x2080290	userenv: user policy mutex
+0x209d708	XMR8149A9A8
+0x209fec8	N/A
+0x20aa3f0	{A3BD3259-3E4F-428a-84C8-F0463A9D3EB5}
+0x20b1180	N/A
+0x21fa3b8	N/A
+0x21fa420	N/A
+0x21fa4f0	N/A
+0x21fa6b8	N/A
+0x21fd2d0	N/A
+0x21fdfe0	N/A
+0x2202b20	N/A
+0x225a810	N/A
+0x225ac38	N/A
+0x225d990	N/A
+0x2260810	N/A
+0x2260c38	N/A
+0x2262d18	msgina: InteractiveLogonRequestMutex
+0x22634c0	msgina: InteractiveLogonMutex
+0x2266190	N/A
+0x22696b8	c:!documents and settings!localservice!local settings!temporary internet files!content.ie5!
+0x226c838	N/A
+0x2278dd8	N/A
+0x2279370	N/A
+0x22c3030	238FAD3109D3473aB4764B20B3731840
+0x22f4868	MidiMapper_modLongMessage_RefCnt
+0x22f5e60	N/A
+0x22f5f80	N/A
+0x231c668	N/A
+0x231cd30	N/A
+0x231e7e8	N/A
+0x231f020	N/A
+0x231fac0	N/A
+0x2320aa0	N/A
+0x232b370	N/A
+0x234cad8	N/A
+0x236ee30	XMS8149A9A8
+0x236efb0	XMM000005CC
+0x2388548	N/A
+0x2388a40	N/A
+0x2388ab0	N/A
+0x238c070	N/A
+0x238c0b0	N/A
+0x2397c38	N/A
+0x239a128	N/A
+0x239d2e0	4FCC0DEFE22C4f138FB9D5AF25FD9398
+0x23a5bf0	PnP_Init_Mutex
+0x23aaaf0	N/A
+0x23b3f48	Instance0:  ESENT Performance Data Schema Version 40
+0x23cd920	N/A
+0x23dcba0	N/A
+0x23dcbe0	N/A
+0x23ddd18	N/A
+0x23ea0e0	ShimCacheMutex
+0x23ec678	N/A
+0x23f0ec8	N/A
+0x23f3678	N/A
+0x23f5f40	N/A
+0x23fc8b0	N/A
+0x23ff6f0	N/A
+0x2401810	N/A
+0x241a1c8	N/A
+0x241fa10	WPA_LICSTORE_MUTEX
+0x241fa60	WPA_HWID_MUTEX
+0x241fab0	WPA_LT_MUTEX
+0x241fb00	WPA_RT_MUTEX
+0x241fb50	WPA_PR_MUTEX
+0x2425e88	userenv: machine policy mutex
+0x243ca00	ExplorerIsShellMutex
+0x243f188	c:!documents and settings!localservice!cookies!
+0x24403c8	XMQ8149A9A8
+0x24413e8	N/A
+0x2441810	N/A
+0x24436e8	c:!documents and settings!robert!cookies!
+0x2462a98	N/A
+0x246d530	N/A
+0x246e6d8	userenv: Machine Registry policy mutex
+0x2478250	N/A
+0x2478458	N/A
+0x2478528	N/A
+0x2478590	N/A
+0x24785f8	N/A
+0x2478660	N/A
+0x2479318	N/A
+0x24797b8	ZonesCounterMutex
+0x247a460	N/A
+0x247d1f0	N/A
+0x247d848	ZonesCacheCounterMutex
+0x247e770	N/A
+0x2492770	N/A
+0x2493bb8	N/A
+0x2494c98	N/A
+0x2494ec8	N/A
+0x2497980	MidiMapper_Configure
+0x24cf1d8	0CADFD67AF62496dB34264F000F5624A
+0x24d7fe0	N/A
+0x24ec308	N/A
+0x24ed4e0	N/A
+0x24edd30	N/A
+0x24edea8	ZonesLockedCacheCounterMutex
+0x24eeaa0	N/A
+0x24ef908	N/A
+0x24efd30	N/A
+0x24f0850	WindowsUpdateTracingMutex
+0x24f0aa0	N/A
+0x24f0af0	N/A
+0x24f12c0	N/A
+0x24f2678	N/A
+0x24f3fe0	SRDataStore
+0x24f7880	c:!documents and settings!robert!local settings!history!history.ie5!
+0x24f8e90	N/A
+0x24f9d30	N/A
+0x24fdb00	XMM00000668
+0x2501e10	N/A
+0x2514a48	winlogon: Logon UserProfileMapping Mutex
+0x2518120	RasPbFile
+0x2518160	N/A
+0x251aeb0	_!MSFTHISTORY!_

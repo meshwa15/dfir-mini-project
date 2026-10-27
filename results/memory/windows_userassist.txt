@@ -1,0 +1,74 @@
+Volatility 3 Framework 2.28.2
+
+Hive Offset	Hive Name	Path	Last Write Time	Type	Name	ID	Count	Focus Count	Time Focused	Last Updated	Raw Data
+
+0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{5E6AB780-7743-11CF-A12B-00AA004AE837}\Count	2012-07-22 02:26:25.000000 UTC	Key	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{5E6AB780-7743-11CF-A12B-00AA004AE837}\Count	2012-07-22 02:26:25.000000 UTC	Value	UEME_CTLSESSION	-	-	-	-	-	
+8b 3d 6b 0e 03 00 00 00                         .=k.....        
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{5E6AB780-7743-11CF-A12B-00AA004AE837}\Count	2012-07-22 02:26:25.000000 UTC	Value	UEME_CTLCUACount:ctor	1	2	N/A	N/A	N/A	
+01 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00 ................
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{5E6AB780-7743-11CF-A12B-00AA004AE837}\Count	2012-07-22 02:26:25.000000 UTC	Value	UEME_UITOOLBAR	1	1	N/A	N/A	2011-04-13 00:56:58.000000 UTC	
+01 00 00 00 06 00 00 00 30 35 b2 b0 75 f9 cb 01 ........05..u...
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{5E6AB780-7743-11CF-A12B-00AA004AE837}\Count	2012-07-22 02:26:25.000000 UTC	Value	UEME_UITOOLBAR:0x4,7031	1	1	N/A	N/A	2011-04-13 00:56:58.000000 UTC	
+01 00 00 00 06 00 00 00 30 35 b2 b0 75 f9 cb 01 ........05..u...
+0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Key	N/A	N/A	N/A	N/A	N/A	N/A	N/A
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_CTLSESSION	-	-	-	-	-	
+8d 3d 6b 0e 03 00 00 00                         .=k.....        
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNPIDL:%csidl2%\MSN.lnk	1	14	N/A	N/A	2011-04-13 00:51:21.000000 UTC	
+01 00 00 00 13 00 00 00 5c 78 3e e8 74 f9 cb 01 ........\x>.t...
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNPIDL:%csidl2%\Windows Media Player.lnk	1	13	N/A	N/A	2011-04-13 00:51:21.000000 UTC	
+01 00 00 00 12 00 00 00 5c 78 3e e8 74 f9 cb 01 ........\x>.t...
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNPIDL:%csidl2%\Windows Messenger.lnk	1	12	N/A	N/A	2011-04-13 00:51:21.000000 UTC	
+01 00 00 00 11 00 00 00 5c 78 3e e8 74 f9 cb 01 ........\x>.t...
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNPIDL:%csidl2%\Accessories\Tour Windows XP.lnk	1	11	N/A	N/A	2011-04-13 00:51:21.000000 UTC	
+01 00 00 00 10 00 00 00 5c 78 3e e8 74 f9 cb 01 ........\x>.t...
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNPIDL:%csidl2%\Accessories\System Tools\Files and Settings Transfer Wizard.lnk	1	10	N/A	N/A	2011-04-13 00:51:21.000000 UTC	
+01 00 00 00 0f 00 00 00 5c 78 3e e8 74 f9 cb 01 ........\x>.t...
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_CTLCUACount:ctor	1	2	N/A	N/A	N/A	
+01 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00 ................
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNCPL	2	7	N/A	N/A	2012-07-22 02:26:06.000000 UTC	
+02 00 00 00 0c 00 00 00 c0 00 e0 58 b1 67 cd 01 ...........X.g..
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNCPL:"C:\WINDOWS\system32\firewall.cpl",Windows Firewall	2	2	N/A	N/A	2012-07-22 02:26:19.000000 UTC	
+02 00 00 00 07 00 00 00 70 ab f0 60 b1 67 cd 01 ........p..`.g..
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNCPL:"C:\WINDOWS\system32\appwiz.cpl",Add or Remove Programs	1	1	N/A	N/A	2011-04-13 00:54:24.000000 UTC	
+01 00 00 00 06 00 00 00 90 e2 05 55 75 f9 cb 01 ...........Uu...
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNCPL:"C:\WINDOWS\system32\wscui.cpl",Security Center	2	3	N/A	N/A	2012-07-22 02:25:48.000000 UTC	
+02 00 00 00 08 00 00 00 00 9e 0d 4e b1 67 cd 01 ...........N.g..
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNPIDL	3	8	N/A	N/A	2012-07-22 02:31:28.000000 UTC	
+03 00 00 00 0d 00 00 00 10 de 14 19 b2 67 cd 01 .............g..
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNPIDL:%csidl2%\Accessories\Windows Explorer.lnk	1	1	N/A	N/A	2011-04-13 00:56:56.000000 UTC	
+01 00 00 00 06 00 00 00 40 dc 79 af 75 f9 cb 01 ........@.y.u...
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNPIDL:%csidl2%\Accessories	1	2	N/A	N/A	2012-02-18 20:16:09.000000 UTC	
+01 00 00 00 07 00 00 00 80 63 1d 27 7a ee cc 01 .........c.'z...
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNPATH	3	18	N/A	N/A	2012-07-22 02:31:51.000000 UTC	
+03 00 00 00 17 00 00 00 00 a1 9a 26 b2 67 cd 01 ...........&.g..
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNPATH:C:\WINDOWS\explorer.exe	3	4	N/A	N/A	2012-07-22 02:30:20.000000 UTC	
+03 00 00 00 09 00 00 00 50 34 70 f0 b1 67 cd 01 ........P4p..g..
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNPATH:C:\Program Files\Internet Explorer\iexplore.exe	3	3	N/A	N/A	2012-07-22 02:31:28.000000 UTC	
+03 00 00 00 08 00 00 00 10 de 14 19 b2 67 cd 01 .............g..
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNPIDL:::{2559A1F4-21D7-11D4-BDAF-00C04F60B9F0}	3	3	N/A	N/A	2012-07-22 02:31:28.000000 UTC	
+03 00 00 00 08 00 00 00 10 de 14 19 b2 67 cd 01 .............g..
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_UISCUT	3	5	N/A	N/A	2012-07-22 02:30:20.000000 UTC	
+03 00 00 00 0a 00 00 00 80 92 5f f0 b1 67 cd 01 .........._..g..
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNPATH:WinSCP.lnk	1	1	N/A	N/A	2012-02-18 19:57:30.000000 UTC	
+01 00 00 00 06 00 00 00 50 1f 02 8c 77 ee cc 01 ........P...w...
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNPATH:C:\Program Files\WinSCP\WinSCP.exe	1	1	N/A	N/A	2012-02-18 19:57:30.000000 UTC	
+01 00 00 00 06 00 00 00 f0 44 28 8c 77 ee cc 01 .........D(.w...
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNPATH:Windows Explorer.lnk	3	3	N/A	N/A	2012-07-22 02:30:20.000000 UTC	
+03 00 00 00 08 00 00 00 80 92 5f f0 b1 67 cd 01 .........._..g..
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNPATH:C:\Documents and Settings\Robert\My Documents\AdbeRdr90_en_US.exe	1	1	N/A	N/A	2012-02-18 20:02:04.000000 UTC	
+01 00 00 00 06 00 00 00 f0 ca 7b 2f 78 ee cc 01 ..........{/x...
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNPIDL:%csidl2%\Adobe Reader 9.lnk	1	2	N/A	N/A	N/A	
+01 00 00 00 02 00 00 00 00 00 00 00 00 00 00 00 ................
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNPATH:Adobe Reader 9.lnk	1	1	N/A	N/A	2012-02-18 20:12:36.000000 UTC	
+01 00 00 00 06 00 00 00 e0 a0 31 a8 79 ee cc 01 ..........1.y...
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNPATH:C:\Program Files\Adobe\Reader 9.0\Reader\AcroRd32.exe	1	1	N/A	N/A	2012-02-18 20:12:36.000000 UTC	
+01 00 00 00 06 00 00 00 b0 24 47 a8 79 ee cc 01 .........$G.y...
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNPIDL:%csidl2%\Accessories\Command Prompt.lnk	2	2	N/A	N/A	2012-07-22 02:26:27.000000 UTC	
+02 00 00 00 07 00 00 00 f0 e1 80 65 b1 67 cd 01 ...........e.g..
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNPATH:C:\WINDOWS\system32\cmd.exe	2	2	N/A	N/A	2012-07-22 02:26:27.000000 UTC	
+02 00 00 00 07 00 00 00 f0 e1 80 65 b1 67 cd 01 ...........e.g..
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNCPL:"C:\WINDOWS\system32\inetcpl.cpl",Internet Options	2	1	N/A	N/A	2012-07-22 02:25:41.000000 UTC	
+02 00 00 00 06 00 00 00 00 1c 11 4a b1 67 cd 01 ...........J.g..
+* 0xe1a19b60	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT	NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\Count	2012-07-22 02:31:51.000000 UTC	Value	UEME_RUNPATH:C:\WINDOWS\cridex1.exe	3	1	N/A	N/A	2012-07-22 02:31:51.000000 UTC	
+03 00 00 00 06 00 00 00 00 a1 9a 26 b2 67 cd 01 ...........&.g..

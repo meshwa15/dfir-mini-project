@@ -1,0 +1,21 @@
+Volatility 3 Framework 2.28.2
+
+PID	PPID	ImageFileName	Offset(V)	Threads	Handles	SessionId	Wow64	CreateTime	ExitTime	Audit	Cmd	Path
+
+4	0	System	0x823c89c8	53	240	N/A	False	N/A	N/A	-	-	-
+* 368	4	smss.exe	0x822f1020	3	19	N/A	False	2012-07-22 02:42:31.000000 UTC	N/A	\Device\HarddiskVolume1\WINDOWS\system32\smss.exe	\SystemRoot\System32\smss.exe	\SystemRoot\System32\smss.exe
+** 584	368	csrss.exe	0x822a0598	9	326	0	False	2012-07-22 02:42:32.000000 UTC	N/A	\Device\HarddiskVolume1\WINDOWS\system32\csrss.exe	C:\WINDOWS\system32\csrss.exe ObjectDirectory=\Windows SharedSection=1024,3072,512 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=winsrv:ConServerDllInitialization,2 ProfileControl=Off MaxRequestThreads=16	\??\C:\WINDOWS\system32\csrss.exe
+** 608	368	winlogon.exe	0x82298700	23	519	0	False	2012-07-22 02:42:32.000000 UTC	N/A	\Device\HarddiskVolume1\WINDOWS\system32\winlogon.exe	winlogon.exe	\??\C:\WINDOWS\system32\winlogon.exe
+*** 664	608	lsass.exe	0x81e2a3b8	24	330	0	False	2012-07-22 02:42:32.000000 UTC	N/A	\Device\HarddiskVolume1\WINDOWS\system32\lsass.exe	C:\WINDOWS\system32\lsass.exe	C:\WINDOWS\system32\lsass.exe
+*** 652	608	services.exe	0x81e2ab28	16	243	0	False	2012-07-22 02:42:32.000000 UTC	N/A	\Device\HarddiskVolume1\WINDOWS\system32\services.exe	C:\WINDOWS\system32\services.exe	C:\WINDOWS\system32\services.exe
+**** 1056	652	svchost.exe	0x821dfda0	5	60	0	False	2012-07-22 02:42:33.000000 UTC	N/A	\Device\HarddiskVolume1\WINDOWS\system32\svchost.exe	C:\WINDOWS\system32\svchost.exe -k NetworkService	C:\WINDOWS\system32\svchost.exe
+**** 1220	652	svchost.exe	0x82295650	15	197	0	False	2012-07-22 02:42:35.000000 UTC	N/A	\Device\HarddiskVolume1\WINDOWS\system32\svchost.exe	C:\WINDOWS\system32\svchost.exe -k LocalService	C:\WINDOWS\system32\svchost.exe
+**** 1512	652	spoolsv.exe	0x81eb17b8	14	113	0	False	2012-07-22 02:42:36.000000 UTC	N/A	\Device\HarddiskVolume1\WINDOWS\system32\spoolsv.exe	C:\WINDOWS\system32\spoolsv.exe	C:\WINDOWS\system32\spoolsv.exe
+**** 908	652	svchost.exe	0x81e29ab8	9	226	0	False	2012-07-22 02:42:33.000000 UTC	N/A	\Device\HarddiskVolume1\WINDOWS\system32\svchost.exe	C:\WINDOWS\system32\svchost -k rpcss	C:\WINDOWS\system32\svchost.exe
+**** 1004	652	svchost.exe	0x823001d0	64	1118	0	False	2012-07-22 02:42:33.000000 UTC	N/A	\Device\HarddiskVolume1\WINDOWS\system32\svchost.exe	C:\WINDOWS\System32\svchost.exe -k netsvcs	C:\WINDOWS\System32\svchost.exe
+***** 1136	1004	wuauclt.exe	0x821fcda0	8	173	0	False	2012-07-22 02:43:46.000000 UTC	N/A	\Device\HarddiskVolume1\WINDOWS\system32\wuauclt.exe	"C:\WINDOWS\system32\wuauclt.exe" /RunStoreAsComServer Local\[3ec]SUSDSb81eb56fa3105543beb3109274ef8ec1	C:\WINDOWS\system32\wuauclt.exe
+***** 1588	1004	wuauclt.exe	0x8205bda0	5	132	0	False	2012-07-22 02:44:01.000000 UTC	N/A	\Device\HarddiskVolume1\WINDOWS\system32\wuauclt.exe	"C:\WINDOWS\system32\wuauclt.exe"	C:\WINDOWS\system32\wuauclt.exe
+**** 788	652	alg.exe	0x820e8da0	7	104	0	False	2012-07-22 02:43:01.000000 UTC	N/A	\Device\HarddiskVolume1\WINDOWS\system32\alg.exe	C:\WINDOWS\System32\alg.exe	C:\WINDOWS\System32\alg.exe
+**** 824	652	svchost.exe	0x82311360	20	194	0	False	2012-07-22 02:42:33.000000 UTC	N/A	\Device\HarddiskVolume1\WINDOWS\system32\svchost.exe	C:\WINDOWS\system32\svchost -k DcomLaunch	C:\WINDOWS\system32\svchost.exe
+1484	1464	explorer.exe	0x821dea70	17	415	0	False	2012-07-22 02:42:36.000000 UTC	N/A	\Device\HarddiskVolume1\WINDOWS\explorer.exe	C:\WINDOWS\Explorer.EXE	C:\WINDOWS\Explorer.EXE
+* 1640	1484	reader_sl.exe	0x81e7bda0	5	39	0	False	2012-07-22 02:42:36.000000 UTC	N/A	\Device\HarddiskVolume1\Program Files\Adobe\Reader 9.0\Reader\reader_sl.exe	"C:\Program Files\Adobe\Reader 9.0\Reader\Reader_sl.exe" 	C:\Program Files\Adobe\Reader 9.0\Reader\Reader_sl.exe

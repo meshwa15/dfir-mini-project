@@ -1,0 +1,5 @@
+Volatility 3 Framework 2.28.2
+
+Last Write Time	Hive Offset	Type	Key	Name	Data	Volatile
+
+2012-07-22 02:31:51.000000 UTC	0xe1a19b60	REG_SZ	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Run	KB00207877.exe	"C:\Documents and Settings\Robert\Application Data\KB00207877.exe"	False

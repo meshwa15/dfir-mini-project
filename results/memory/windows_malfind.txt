@@ -1,0 +1,385 @@
+Volatility 3 Framework 2.28.2
+
+PID	Process	Start VPN	End VPN	Tag	Protection	CommitCharge	PrivateMemory	File output	Notes	Hexdump	Disasm
+
+584	csrss.exe	0x7f6f0000	0x7f7effff	Vad 	PAGE_EXECUTE_READWRITE	0	0	Disabled	N/A	
+c8 00 00 00 91 01 00 00 ff ee ff ee 08 70 00 00 .............p..
+08 00 00 00 00 fe 00 00 00 00 10 00 00 20 00 00 ............. ..
+00 02 00 00 00 20 00 00 8d 01 00 00 ff ef fd 7f ..... ..........
+03 00 08 06 00 00 00 00 00 00 00 00 00 00 00 00 ................	
+0x7f6f0000:	enter	0, 0
+0x7f6f0004:	xchg	ecx, eax
+0x7f6f0005:	add	dword ptr [eax], eax
+0x7f6f0007:	add	bh, bh
+0x7f6f0009:	out	dx, al
+608	winlogon.exe	0x580000	0x59ffff	Vad 	PAGE_EXECUTE_READ	0	0	Disabled	N/A	
+c1 00 00 00 00 01 00 00 ff ee ff ee 09 00 00 00 ................
+09 00 00 00 00 fe 00 00 00 00 10 00 00 20 00 00 ............. ..
+00 02 00 00 00 20 00 00 49 08 00 00 ff ef fd 7f ..... ..I.......
+00 00 08 06 00 00 00 00 00 00 00 00 00 00 00 00 ................	
+0x580000:	rol	dword ptr [eax], 0
+0x580003:	add	byte ptr [eax], al
+0x580005:	add	dword ptr [eax], eax
+0x580007:	add	bh, bh
+0x580009:	out	dx, al
+608	winlogon.exe	0x13410000	0x13413fff	VadS	PAGE_EXECUTE_READWRITE	4	1	Disabled	N/A	
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 25 00 25 00 01 00 00 00 00 00 00 00 ....%.%.........	
+0x13410000:	add	byte ptr [eax], al
+0x13410002:	add	byte ptr [eax], al
+0x13410004:	add	byte ptr [eax], al
+0x13410006:	add	byte ptr [eax], al
+0x13410008:	add	byte ptr [eax], al
+0x1341000a:	add	byte ptr [eax], al
+0x1341000c:	add	byte ptr [eax], al
+0x1341000e:	add	byte ptr [eax], al
+0x13410010:	add	byte ptr [eax], al
+0x13410012:	add	byte ptr [eax], al
+0x13410014:	add	byte ptr [eax], al
+0x13410016:	add	byte ptr [eax], al
+0x13410018:	add	byte ptr [eax], al
+0x1341001a:	add	byte ptr [eax], al
+0x1341001c:	add	byte ptr [eax], al
+0x1341001e:	add	byte ptr [eax], al
+0x13410020:	add	byte ptr [eax], al
+0x13410022:	add	byte ptr [eax], al
+0x13410024:	add	byte ptr [eax], al
+0x13410026:	add	byte ptr [eax], al
+0x13410028:	add	byte ptr [eax], al
+0x1341002a:	add	byte ptr [eax], al
+0x1341002c:	add	byte ptr [eax], al
+0x1341002e:	add	byte ptr [eax], al
+0x13410030:	add	byte ptr [eax], al
+0x13410032:	add	byte ptr [eax], al
+0x13410034:	and	eax, 0x1002500
+0x13410039:	add	byte ptr [eax], al
+0x1341003b:	add	byte ptr [eax], al
+0x1341003d:	add	byte ptr [eax], al
+608	winlogon.exe	0xf9e0000	0xf9e3fff	VadS	PAGE_EXECUTE_READWRITE	4	1	Disabled	N/A	
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 25 00 25 00 01 00 00 00 00 00 00 00 ....%.%.........	
+0xf9e0000:	add	byte ptr [eax], al
+0xf9e0002:	add	byte ptr [eax], al
+0xf9e0004:	add	byte ptr [eax], al
+0xf9e0006:	add	byte ptr [eax], al
+0xf9e0008:	add	byte ptr [eax], al
+0xf9e000a:	add	byte ptr [eax], al
+0xf9e000c:	add	byte ptr [eax], al
+0xf9e000e:	add	byte ptr [eax], al
+0xf9e0010:	add	byte ptr [eax], al
+0xf9e0012:	add	byte ptr [eax], al
+0xf9e0014:	add	byte ptr [eax], al
+0xf9e0016:	add	byte ptr [eax], al
+0xf9e0018:	add	byte ptr [eax], al
+0xf9e001a:	add	byte ptr [eax], al
+0xf9e001c:	add	byte ptr [eax], al
+0xf9e001e:	add	byte ptr [eax], al
+0xf9e0020:	add	byte ptr [eax], al
+0xf9e0022:	add	byte ptr [eax], al
+0xf9e0024:	add	byte ptr [eax], al
+0xf9e0026:	add	byte ptr [eax], al
+0xf9e0028:	add	byte ptr [eax], al
+0xf9e002a:	add	byte ptr [eax], al
+0xf9e002c:	add	byte ptr [eax], al
+0xf9e002e:	add	byte ptr [eax], al
+0xf9e0030:	add	byte ptr [eax], al
+0xf9e0032:	add	byte ptr [eax], al
+0xf9e0034:	and	eax, 0x1002500
+0xf9e0039:	add	byte ptr [eax], al
+0xf9e003b:	add	byte ptr [eax], al
+0xf9e003d:	add	byte ptr [eax], al
+608	winlogon.exe	0x4ee0000	0x4ee3fff	VadS	PAGE_EXECUTE_READWRITE	4	1	Disabled	N/A	
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 25 00 25 00 01 00 00 00 00 00 00 00 ....%.%.........	
+0x4ee0000:	add	byte ptr [eax], al
+0x4ee0002:	add	byte ptr [eax], al
+0x4ee0004:	add	byte ptr [eax], al
+0x4ee0006:	add	byte ptr [eax], al
+0x4ee0008:	add	byte ptr [eax], al
+0x4ee000a:	add	byte ptr [eax], al
+0x4ee000c:	add	byte ptr [eax], al
+0x4ee000e:	add	byte ptr [eax], al
+0x4ee0010:	add	byte ptr [eax], al
+0x4ee0012:	add	byte ptr [eax], al
+0x4ee0014:	add	byte ptr [eax], al
+0x4ee0016:	add	byte ptr [eax], al
+0x4ee0018:	add	byte ptr [eax], al
+0x4ee001a:	add	byte ptr [eax], al
+0x4ee001c:	add	byte ptr [eax], al
+0x4ee001e:	add	byte ptr [eax], al
+0x4ee0020:	add	byte ptr [eax], al
+0x4ee0022:	add	byte ptr [eax], al
+0x4ee0024:	add	byte ptr [eax], al
+0x4ee0026:	add	byte ptr [eax], al
+0x4ee0028:	add	byte ptr [eax], al
+0x4ee002a:	add	byte ptr [eax], al
+0x4ee002c:	add	byte ptr [eax], al
+0x4ee002e:	add	byte ptr [eax], al
+0x4ee0030:	add	byte ptr [eax], al
+0x4ee0032:	add	byte ptr [eax], al
+0x4ee0034:	and	eax, 0x1002500
+0x4ee0039:	add	byte ptr [eax], al
+0x4ee003b:	add	byte ptr [eax], al
+0x4ee003d:	add	byte ptr [eax], al
+608	winlogon.exe	0x554c0000	0x554c3fff	VadS	PAGE_EXECUTE_READWRITE	4	1	Disabled	N/A	
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 28 00 28 00 01 00 00 00 00 00 00 00 ....(.(.........	
+0x554c0000:	add	byte ptr [eax], al
+0x554c0002:	add	byte ptr [eax], al
+0x554c0004:	add	byte ptr [eax], al
+0x554c0006:	add	byte ptr [eax], al
+0x554c0008:	add	byte ptr [eax], al
+0x554c000a:	add	byte ptr [eax], al
+0x554c000c:	add	byte ptr [eax], al
+0x554c000e:	add	byte ptr [eax], al
+0x554c0010:	add	byte ptr [eax], al
+0x554c0012:	add	byte ptr [eax], al
+0x554c0014:	add	byte ptr [eax], al
+0x554c0016:	add	byte ptr [eax], al
+0x554c0018:	add	byte ptr [eax], al
+0x554c001a:	add	byte ptr [eax], al
+0x554c001c:	add	byte ptr [eax], al
+0x554c001e:	add	byte ptr [eax], al
+0x554c0020:	add	byte ptr [eax], al
+0x554c0022:	add	byte ptr [eax], al
+0x554c0024:	add	byte ptr [eax], al
+0x554c0026:	add	byte ptr [eax], al
+0x554c0028:	add	byte ptr [eax], al
+0x554c002a:	add	byte ptr [eax], al
+0x554c002c:	add	byte ptr [eax], al
+0x554c002e:	add	byte ptr [eax], al
+0x554c0030:	add	byte ptr [eax], al
+0x554c0032:	add	byte ptr [eax], al
+0x554c0034:	sub	byte ptr [eax], al
+0x554c0036:	sub	byte ptr [eax], al
+0x554c0038:	add	dword ptr [eax], eax
+0x554c003a:	add	byte ptr [eax], al
+0x554c003c:	add	byte ptr [eax], al
+0x554c003e:	add	byte ptr [eax], al
+608	winlogon.exe	0x4dc40000	0x4dc43fff	VadS	PAGE_EXECUTE_READWRITE	4	1	Disabled	N/A	
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 23 00 23 00 01 00 00 00 00 00 00 00 ....#.#.........	
+0x4dc40000:	add	byte ptr [eax], al
+0x4dc40002:	add	byte ptr [eax], al
+0x4dc40004:	add	byte ptr [eax], al
+0x4dc40006:	add	byte ptr [eax], al
+0x4dc40008:	add	byte ptr [eax], al
+0x4dc4000a:	add	byte ptr [eax], al
+0x4dc4000c:	add	byte ptr [eax], al
+0x4dc4000e:	add	byte ptr [eax], al
+0x4dc40010:	add	byte ptr [eax], al
+0x4dc40012:	add	byte ptr [eax], al
+0x4dc40014:	add	byte ptr [eax], al
+0x4dc40016:	add	byte ptr [eax], al
+0x4dc40018:	add	byte ptr [eax], al
+0x4dc4001a:	add	byte ptr [eax], al
+0x4dc4001c:	add	byte ptr [eax], al
+0x4dc4001e:	add	byte ptr [eax], al
+0x4dc40020:	add	byte ptr [eax], al
+0x4dc40022:	add	byte ptr [eax], al
+0x4dc40024:	add	byte ptr [eax], al
+0x4dc40026:	add	byte ptr [eax], al
+0x4dc40028:	add	byte ptr [eax], al
+0x4dc4002a:	add	byte ptr [eax], al
+0x4dc4002c:	add	byte ptr [eax], al
+0x4dc4002e:	add	byte ptr [eax], al
+0x4dc40030:	add	byte ptr [eax], al
+0x4dc40032:	add	byte ptr [eax], al
+0x4dc40034:	and	eax, dword ptr [eax]
+0x4dc40036:	and	eax, dword ptr [eax]
+0x4dc40038:	add	dword ptr [eax], eax
+0x4dc4003a:	add	byte ptr [eax], al
+0x4dc4003c:	add	byte ptr [eax], al
+0x4dc4003e:	add	byte ptr [eax], al
+608	winlogon.exe	0x4c540000	0x4c543fff	VadS	PAGE_EXECUTE_READWRITE	4	1	Disabled	N/A	
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 22 00 22 00 01 00 00 00 00 00 00 00 ....".".........	
+0x4c540000:	add	byte ptr [eax], al
+0x4c540002:	add	byte ptr [eax], al
+0x4c540004:	add	byte ptr [eax], al
+0x4c540006:	add	byte ptr [eax], al
+0x4c540008:	add	byte ptr [eax], al
+0x4c54000a:	add	byte ptr [eax], al
+0x4c54000c:	add	byte ptr [eax], al
+0x4c54000e:	add	byte ptr [eax], al
+0x4c540010:	add	byte ptr [eax], al
+0x4c540012:	add	byte ptr [eax], al
+0x4c540014:	add	byte ptr [eax], al
+0x4c540016:	add	byte ptr [eax], al
+0x4c540018:	add	byte ptr [eax], al
+0x4c54001a:	add	byte ptr [eax], al
+0x4c54001c:	add	byte ptr [eax], al
+0x4c54001e:	add	byte ptr [eax], al
+0x4c540020:	add	byte ptr [eax], al
+0x4c540022:	add	byte ptr [eax], al
+0x4c540024:	add	byte ptr [eax], al
+0x4c540026:	add	byte ptr [eax], al
+0x4c540028:	add	byte ptr [eax], al
+0x4c54002a:	add	byte ptr [eax], al
+0x4c54002c:	add	byte ptr [eax], al
+0x4c54002e:	add	byte ptr [eax], al
+0x4c540030:	add	byte ptr [eax], al
+0x4c540032:	add	byte ptr [eax], al
+0x4c540034:	and	al, byte ptr [eax]
+0x4c540036:	and	al, byte ptr [eax]
+0x4c540038:	add	dword ptr [eax], eax
+0x4c54003a:	add	byte ptr [eax], al
+0x4c54003c:	add	byte ptr [eax], al
+0x4c54003e:	add	byte ptr [eax], al
+608	winlogon.exe	0x5de10000	0x5de13fff	VadS	PAGE_EXECUTE_READWRITE	4	1	Disabled	N/A	
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 22 00 22 00 01 00 00 00 00 00 00 00 ....".".........	
+0x5de10000:	add	byte ptr [eax], al
+0x5de10002:	add	byte ptr [eax], al
+0x5de10004:	add	byte ptr [eax], al
+0x5de10006:	add	byte ptr [eax], al
+0x5de10008:	add	byte ptr [eax], al
+0x5de1000a:	add	byte ptr [eax], al
+0x5de1000c:	add	byte ptr [eax], al
+0x5de1000e:	add	byte ptr [eax], al
+0x5de10010:	add	byte ptr [eax], al
+0x5de10012:	add	byte ptr [eax], al
+0x5de10014:	add	byte ptr [eax], al
+0x5de10016:	add	byte ptr [eax], al
+0x5de10018:	add	byte ptr [eax], al
+0x5de1001a:	add	byte ptr [eax], al
+0x5de1001c:	add	byte ptr [eax], al
+0x5de1001e:	add	byte ptr [eax], al
+0x5de10020:	add	byte ptr [eax], al
+0x5de10022:	add	byte ptr [eax], al
+0x5de10024:	add	byte ptr [eax], al
+0x5de10026:	add	byte ptr [eax], al
+0x5de10028:	add	byte ptr [eax], al
+0x5de1002a:	add	byte ptr [eax], al
+0x5de1002c:	add	byte ptr [eax], al
+0x5de1002e:	add	byte ptr [eax], al
+0x5de10030:	add	byte ptr [eax], al
+0x5de10032:	add	byte ptr [eax], al
+0x5de10034:	and	al, byte ptr [eax]
+0x5de10036:	and	al, byte ptr [eax]
+0x5de10038:	add	dword ptr [eax], eax
+0x5de1003a:	add	byte ptr [eax], al
+0x5de1003c:	add	byte ptr [eax], al
+0x5de1003e:	add	byte ptr [eax], al
+608	winlogon.exe	0x6a230000	0x6a233fff	VadS	PAGE_EXECUTE_READWRITE	4	1	Disabled	N/A	
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 2b 00 2b 00 01 00 00 00 00 00 00 00 ....+.+.........	
+0x6a230000:	add	byte ptr [eax], al
+0x6a230002:	add	byte ptr [eax], al
+0x6a230004:	add	byte ptr [eax], al
+0x6a230006:	add	byte ptr [eax], al
+0x6a230008:	add	byte ptr [eax], al
+0x6a23000a:	add	byte ptr [eax], al
+0x6a23000c:	add	byte ptr [eax], al
+0x6a23000e:	add	byte ptr [eax], al
+0x6a230010:	add	byte ptr [eax], al
+0x6a230012:	add	byte ptr [eax], al
+0x6a230014:	add	byte ptr [eax], al
+0x6a230016:	add	byte ptr [eax], al
+0x6a230018:	add	byte ptr [eax], al
+0x6a23001a:	add	byte ptr [eax], al
+0x6a23001c:	add	byte ptr [eax], al
+0x6a23001e:	add	byte ptr [eax], al
+0x6a230020:	add	byte ptr [eax], al
+0x6a230022:	add	byte ptr [eax], al
+0x6a230024:	add	byte ptr [eax], al
+0x6a230026:	add	byte ptr [eax], al
+0x6a230028:	add	byte ptr [eax], al
+0x6a23002a:	add	byte ptr [eax], al
+0x6a23002c:	add	byte ptr [eax], al
+0x6a23002e:	add	byte ptr [eax], al
+0x6a230030:	add	byte ptr [eax], al
+0x6a230032:	add	byte ptr [eax], al
+0x6a230034:	sub	eax, dword ptr [eax]
+0x6a230036:	sub	eax, dword ptr [eax]
+0x6a230038:	add	dword ptr [eax], eax
+0x6a23003a:	add	byte ptr [eax], al
+0x6a23003c:	add	byte ptr [eax], al
+0x6a23003e:	add	byte ptr [eax], al
+608	winlogon.exe	0x73f40000	0x73f43fff	VadS	PAGE_EXECUTE_READWRITE	4	1	Disabled	N/A	
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 2a 00 2a 00 01 00 00 00 00 00 00 00 ....*.*.........	
+0x73f40000:	add	byte ptr [eax], al
+0x73f40002:	add	byte ptr [eax], al
+0x73f40004:	add	byte ptr [eax], al
+0x73f40006:	add	byte ptr [eax], al
+0x73f40008:	add	byte ptr [eax], al
+0x73f4000a:	add	byte ptr [eax], al
+0x73f4000c:	add	byte ptr [eax], al
+0x73f4000e:	add	byte ptr [eax], al
+0x73f40010:	add	byte ptr [eax], al
+0x73f40012:	add	byte ptr [eax], al
+0x73f40014:	add	byte ptr [eax], al
+0x73f40016:	add	byte ptr [eax], al
+0x73f40018:	add	byte ptr [eax], al
+0x73f4001a:	add	byte ptr [eax], al
+0x73f4001c:	add	byte ptr [eax], al
+0x73f4001e:	add	byte ptr [eax], al
+0x73f40020:	add	byte ptr [eax], al
+0x73f40022:	add	byte ptr [eax], al
+0x73f40024:	add	byte ptr [eax], al
+0x73f40026:	add	byte ptr [eax], al
+0x73f40028:	add	byte ptr [eax], al
+0x73f4002a:	add	byte ptr [eax], al
+0x73f4002c:	add	byte ptr [eax], al
+0x73f4002e:	add	byte ptr [eax], al
+0x73f40030:	add	byte ptr [eax], al
+0x73f40032:	add	byte ptr [eax], al
+0x73f40034:	sub	al, byte ptr [eax]
+0x73f40036:	sub	al, byte ptr [eax]
+0x73f40038:	add	dword ptr [eax], eax
+0x73f4003a:	add	byte ptr [eax], al
+0x73f4003c:	add	byte ptr [eax], al
+0x73f4003e:	add	byte ptr [eax], al
+608	winlogon.exe	0x7f6f0000	0x7f7effff	Vad 	PAGE_EXECUTE_READ	0	0	Disabled	N/A	
+c8 00 00 00 91 01 00 00 ff ee ff ee 08 70 00 00 .............p..
+08 00 00 00 00 fe 00 00 00 00 10 00 00 20 00 00 ............. ..
+00 02 00 00 00 20 00 00 8d 01 00 00 ff ef fd 7f ..... ..........
+03 00 08 06 00 00 00 00 00 00 00 00 00 00 00 00 ................	
+0x7f6f0000:	enter	0, 0
+0x7f6f0004:	xchg	ecx, eax
+0x7f6f0005:	add	dword ptr [eax], eax
+0x7f6f0007:	add	bh, bh
+0x7f6f0009:	out	dx, al
+1484	explorer.exe	0x1460000	0x1480fff	VadS	PAGE_EXECUTE_READWRITE	33	1	Disabled	MZ header	
+4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00 MZ..............
+b8 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00 ........@.......
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 00 00 00 00 00 00 00 00 e0 00 00 00 ................	
+0x1460000:	dec	ebp
+0x1460001:	pop	edx
+0x1460002:	nop	
+0x1460003:	add	byte ptr [ebx], al
+0x1460005:	add	byte ptr [eax], al
+0x1460007:	add	byte ptr [eax + eax], al
+0x146000a:	add	byte ptr [eax], al
+1640	reader_sl.exe	0x3d0000	0x3f0fff	VadS	PAGE_EXECUTE_READWRITE	33	1	Disabled	MZ header	
+4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00 MZ..............
+b8 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00 ........@.......
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+00 00 00 00 00 00 00 00 00 00 00 00 e0 00 00 00 ................	
+0x3d0000:	dec	ebp
+0x3d0001:	pop	edx
+0x3d0002:	nop	
+0x3d0003:	add	byte ptr [ebx], al
+0x3d0005:	add	byte ptr [eax], al
+0x3d0007:	add	byte ptr [eax + eax], al
+0x3d000a:	add	byte ptr [eax], al

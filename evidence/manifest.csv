@@ -1,1 +1,2 @@
 Filename,RelativePath,SizeBytes,CalculatedSHA256,CalculationTime,SourceReference,ReferenceHash,IntegrityStatus
+cridex.vmem,originals/cridex.vmem,536870912,02a63be2fcf3a63446c3c8ca9151aff963f888204d141e46c6be60ddde7c3e8d,2026-10-27 21:57:29 India Standard Time,https://huggingface.co/datasets/jhenning/dfir-validation-data/resolve/main/cridex.vmem (Hugging Face Git LFS / Volatility Wiki),02a63be2fcf3a63446c3c8ca9151aff963f888204d141e46c6be60ddde7c3e8d,MATCH (Verified with Source Reference)

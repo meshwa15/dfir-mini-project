@@ -1,0 +1,6 @@
+Volatility 3 Framework 2.28.2
+
+Last Write Time	Hive Offset	Type	Key	Name	Data	Volatile
+
+2012-07-22 02:33:06.000000 UTC	0xe1a19b60	Key	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT\Software\Microsoft\WSH	8149A9A8	N/A	False
+2012-07-22 02:31:51.000000 UTC	0xe1a19b60	Key	\Device\HarddiskVolume1\Documents and Settings\Robert\NTUSER.DAT\Software\Microsoft\WSH	9DBBCFAD	N/A	False
